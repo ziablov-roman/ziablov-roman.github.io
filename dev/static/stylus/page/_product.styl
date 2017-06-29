@@ -1,0 +1,166 @@
+.product-view
+  padding 100px 0
+  background-color white
+  .container
+    display flex
+    justify-content space-around
+
+.product-view__filter
+  position absolute
+  left -600px
+  padding 5px
+  z-index 100
+  background mainBgColor
+  box-shadow 0 0 10px 1px rgba(0,0,0,.2)
+  ttransition all linear .2s
+  &.active
+    left 0
+    transition all linear .2s
+  .filter-close
+    display block
+
+.product-view__slider
+  width 100%
+  max-width 315px
+
+
+.js-product-view__slider
+  margin-bottom 30px
+  img
+    display block
+    margin 0 auto
+
+.js-product-view__pager
+  a
+    display inline-block
+    position relative
+    vertical-align top
+    width 86px
+    height 70px
+    background mainBgColor
+    margin-right 21px
+    &:last-child
+      margin-right 0
+    &.active
+      background orangeColor
+      img
+        opacity .3
+  img
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%,-50%)
+
+
+.product-title
+  display block
+  font-size  3.714rem
+  font-family veryBoltFont
+  text-transform uppercase
+  color orangeColor
+  margin-bottom 30px
+
+
+.product-descr
+  display block
+  font-size 1.286rem
+  font-family  semiBoltFont
+  color darcTextColor
+  margin-bottom 40px
+
+.product-text
+  display block
+  font-size 1.143rem
+  line-height 1.6
+  color ligtBlueTextColor
+  padding-bottom 40px
+  border-bottom 1px solid lightBorderColor
+
+.product-settings
+  display flex
+  justify-content space-between
+  margin  20px 0
+  font-size 1.286rem
+  font-family  semiBoltFont
+  .product-item__sizes
+    width 100%
+    max-width 278px
+    line-height 50px
+    margin-bottom 0
+
+.product-quantity
+  position relative
+  width 100%
+  text-align right
+  max-width 278px
+  line-height 50px
+  border-left 1px solid lightBorderColor
+
+
+
+.choos-quantity
+  display inline-block
+  margin-left 20px
+  span
+    margin-left 20px
+    cursor pointer
+
+.quantity-count
+  color orangeColor
+  font-size 1.3rem
+
+.product-actions
+  overflow hidden
+  padding-top 40px
+  border-top 1px solid lightBorderColor
+
+.product-price__wrap
+  display inline-block
+  position relative
+  top 12px
+  float left
+  font-size 1.429rem
+  font-family boltFont
+  color ligtBlueTextColor
+
+.product-price
+  margin-left 15px
+
+
+.product-buttons__wrap
+  display inline-block
+  float right
+
+
+.product-buttons
+  display inline-block
+  a
+    display inline-block
+    margin 0 10px
+    cursor pointer
+.product-buttons__pay
+  display inline-block
+  .g-btn
+    display inline-block
+    height 50px
+    line-height 50px
+    border-radius 20px
+    margin-left 20px
+    font-family  semiBoltFont
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

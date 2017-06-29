@@ -1,0 +1,27 @@
+extends ../layout/main
+
+block title
+    | Каталог продукта
+
+block content
+
+    .container
+        section.products-all
+            aside.products-all__filter
+                include ../modules/aside
+
+
+            main.products-all__show
+                include ../products/product1
+                include ../products/product2
+                include ../products/product3
+                include ../products/product4
+                include ../products/product1
+                include ../products/product2
+                include ../products/product3
+                include ../products/product4
+                include ../products/product1
+                a(href="javascript:void(0);").product-item__more--loader ...
+
+
+    include ../modules/subscribe

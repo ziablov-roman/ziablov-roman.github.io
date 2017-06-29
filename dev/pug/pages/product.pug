@@ -1,0 +1,83 @@
+extends ../layout/main
+
+block title
+    | Продукт
+
+block content
+    aside.product-view__filter
+        include ../modules/aside
+    section.product-view
+        .container
+            .product-view__slider
+                ul.js-product-view__slider
+                    li
+                        img(src="/static/img/content/products/big_product.png")
+                    li
+                        img(src="/static/img/content/products/big_product.png")
+                    li
+                        img(src="/static/img/content/products/big_product.png")
+
+
+                .js-product-view__pager
+                    a(href"" data-slide-index="0")
+                        img(src="/static/img/content/products/product6.png").winter-kit__product1
+                    a(href"" data-slide-index="1")
+                        img(src="/static/img/content/products/product7.png").winter-kit__product2
+                    a(href"" data-slide-index="2").active
+                        img(src="/static/img/content/products/product8.png").winter-kit__product3
+            .product-info
+                span.product-title Full Winter Kit
+                span.product-descr Half Jacket + Skiny Trousers + Boot leather
+                p.product-text Lorem Ipsum is simply dummy text of the printing and typesetting industry<br> Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry
+                .product-settings
+                    .product-item__sizes
+                        span Choos Size
+                        ul.sizes-list
+                            li
+                                span s
+                            li
+                                span m
+                            li
+                                span l
+                            li
+                                span xl
+                    .product-quantity
+                        span Choos Quantity
+                        .choos-quantity
+                            span.quantity-up +
+                            span.quantity-count 0
+                            span.quantity-down -
+
+                .product-actions
+                    .product-price__wrap
+                        span Price :
+                        span.product-price 120$
+                    .product-buttons__wrap
+                        .product-buttons
+                            a(href="javascript:void(0);").product-chare
+                            a(href="javascript:void(0);").product-curt
+                            a(href="javascript:void(0);").product-like
+                        .product-buttons__pay
+                            a(href="javascript:void(0);").g-btn Order Now
+
+
+
+
+
+
+    section.related-products
+        .container
+            .section-title
+                .section-title__big
+                    span.section-title__orange Related
+                    span  Products
+                span.section-title__descr Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            .product-item__wrap
+                include ../products/product1
+                include ../products/product2
+                include ../products/product3
+                include ../products/product4
+
+
+
+    include ../modules/subscribe

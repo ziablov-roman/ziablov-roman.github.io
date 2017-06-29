@@ -1,0 +1,277 @@
+.index__filter
+  position absolute
+  left -600px
+  padding 5px
+  z-index 100
+  background mainBgColor
+  box-shadow 0 0 10px 1px rgba(0,0,0,.2)
+  ttransition all linear .2s
+  &.active
+    left 0
+    transition all linear .2s
+  .filter-close
+    display block
+
+.index-slider
+  margin-bottom 120px
+.js-index-slider
+  img
+    width 100%
+  .container
+    position absolute
+
+.js-index-slider__pager
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  z-index 10
+  a
+    display block
+    width 10px
+    height 15px
+    background-color white
+    margin-bottom 10px
+    cursor pointer
+    &:last-child
+      margin-bottom 0
+    &.active
+      height 40px
+      background-color orangeColor
+
+
+.index-slider__info
+  position absolute
+  z-index 10
+  left 28%
+  top 50%
+  transform translateY(-50%)
+.index-slider__title
+  display block
+  font-size 3.714rem
+  text-transform uppercase
+  font-family veryBoltFont
+  color orangeColor
+  margin-bottom 30px
+.index-slider__goods
+  display block
+  font-size 1.286rem
+  font-family: boltFont
+  margin-bottom 10px
+.index-slider__descr
+  display block
+  position relative
+  left  10px
+  color ligtBlueTextColor
+  margin-bottom 50px
+.index-slider__price
+  font-size 1.143rem
+  font-family boltFont
+  margin-right 20px
+.index-slider__buy
+  padding-left 30px
+  font-size 1.143rem
+  color orangeColor
+  font-family boltFont
+  cursor pointer
+  &:before
+    content''
+    display inline-block
+    sprite($s-cart)
+    margin-right 15px
+    margin-bottom -2px
+
+.index-content
+  background-color mainBgColor
+
+.banners
+  overflow hidden
+
+.banner-big
+  overflow hidden
+  float left
+  width 58%
+  height 100px
+  border 2px solid lightBorderColor
+  background-color white
+  img
+    float left
+    margin 7px 60px
+
+.banner-big__text
+  position relative
+  float left
+  top 50%
+  transform translateY(-50%)
+  padding-right 35px
+  border-right 1px solid lightBorderColor
+
+.banner-big__title
+  font-size 1.286rem
+  font-family boltFont
+  text-transform uppercase
+  color ligtBlueTextColor
+  margin-bottom 10px
+
+.banner-big__desc
+  font-size .8571rem
+  color ligtBlueTextColor
+.banner-big__card
+  display inline-block
+  position relative
+  bottom -32px
+  margin-left 40px
+  sprite($s-addToCard)
+  cursor pointer
+
+.banner-big__prise
+  display inline-block
+  position relative
+  top 50%
+  transform translateY(-50%)
+  margin-left 10px
+  a
+    font-size 2.5rem
+    color orangeColor
+    font-family boltFont
+    margin-right 3px
+  span
+    font-size 1.5rem
+    color orangeColor
+    font-family boltFont
+
+
+.banner-small
+  float right
+  width 39%
+  text-align center
+  border 2px solid lightBorderColor
+  background-color white
+  height 100px
+
+.banner-small__empty
+  position relative
+  top 50%
+  transform translateY(-50%)
+
+.banner-empty__text
+  font-size 1.286rem
+  color ligtBlueTextColor
+  margin-right 5px
+
+
+.banner-empty__text--orange
+  color orangeColor
+
+.banner-size
+  display block
+  padding-top 10px
+  color grayTextColor
+  letter-spacing 8px
+
+//section.best-sales
+
+.best-sales__items
+  display flex
+  justify-content space-between
+
+.best-sales__item--wrap
+  display flex
+  justify-content space-between
+  width 31%
+  background-color white
+  padding 50px 20px
+  &:hover
+    box-shadow 0 0 10px 1px rgba(0,0,0,.2)
+    transition 1s
+    .best-sales__rating,
+    .best-sales__prise
+      display none
+     gulp transition 1s
+    .best-sales__buy
+      display block
+      transition 1s
+
+.best-sales__img
+  object-fit contain
+
+
+
+
+.best-sales__item--text
+  display inline-block
+  position relative
+  top 50%
+  transform translateY(-50%)
+  padding-left 20px
+  border-left 1px solid lightBorderColor
+
+
+
+.best-sales__title
+  display block
+  font-weight bold
+  font-size 1.286rem
+  margin-bottom 25px
+  vertical-align top
+
+.best-sales__rating
+  display inline-block
+  margin-right 40px
+  li
+    display inline-block
+    color orangeColor
+    &:last-child
+      margin-right 0
+      color grayTextColor
+
+.best-sales__prise
+  font-weight bold
+  font-size 1.286rem
+  color orangeColor
+
+.best-sales__card
+  display inline-block
+  position relative
+  margin-right 20px
+  top 50%
+  transform translateY(-50%)
+  sprite($s-addToCard)
+  cursor pointer
+
+.best-sales__buy
+  display none
+  text-align center
+  cursor pointer
+  a
+    color orangeColor
+    transition 1s
+  &:before
+    content''
+    display inline-block
+    margin-right 15px
+    sprite($s-addToCard)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

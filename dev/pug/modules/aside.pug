@@ -1,0 +1,71 @@
+.filter-wrap
+    .filter-item
+        span.filter-title Categories
+        .filter-close
+
+        .filter-line
+            input(type="radio" id="filter-cat-men" name="filter-cat")
+            label(for="filter-cat-men") Man
+
+        .filter-line
+            input(type="radio" id="filter-cat-women" name="filter-cat")
+            label(for="filter-cat-women") Women
+
+        .filter-line
+            input(type="radio" id="filter-cat-childrens" name="filter-cat")
+            label(for="filter-cat-childrens") Children
+
+        .filter-line
+            input(type="radio" id="filter-cat-hot" name="filter-cat")
+            label(for="filter-cat-hot") Hot Deals
+
+    .filter-item
+        span.filter-title Prise Filter
+        .filter-line
+            input(type="range" id="filter-prise__rage")
+        .filter-line.filter-line--price
+            .filter-price__from
+                span From
+                input(type="text" id="price-from")
+            .filter-price__to
+                span To
+                input(type="text" id="price-to")
+    .filter-item
+        span.filter-title Sizes
+        .filter-line
+            input(type="checkbox" id="filter-sizes__small" name="filter-sizes")
+            span.castom-checkbox
+            label(for="filter-sizes__small").checkbox Small
+
+        .filter-line
+            input(type="checkbox" id="filter-sizes__midum" name="filter-sizes")
+            span.castom-checkbox
+            label(for="filter-sizes__midum").checkbox Midum
+        .filter-line
+            input(type="checkbox" id="filter-sizes__larg" name="filter-sizes")
+            span.castom-checkbox
+            label(for="filter-sizes__larg").checkbox Larg
+        .filter-line
+            input(type="checkbox" id="filter-sizes__xlarg" name="filter-sizes")
+            span.castom-checkbox
+            label(for="filter-sizes__xlarg").checkbox X Larg
+    .filter-item
+        span.filter-title Brands
+        .filter-line
+            input(type="checkbox" id="filter-brand__reebok")
+            span.castom-checkbox
+            label(for="filter-brand__reebok").checkbox Reebok
+        .filter-line
+            input(type="checkbox" id="filter-brand__adidas")
+            span.castom-checkbox
+            label(for="filter-brand__adidas").checkbox Adidas
+
+        .filter-line
+            input(type="checkbox" id="filter-brand__nike")
+            span.castom-checkbox
+            label(for="filter-brand__nike").checkbox Nike
+
+        .filter-line
+            input(type="checkbox" id="filter-brand__active")
+            span.castom-checkbox
+            label(for="filter-brand__active").checkbox Active
